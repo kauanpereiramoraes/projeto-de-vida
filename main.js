@@ -35,11 +35,13 @@ function calculaTempo(tempoObjetivo) {
     segundos %= 60;
     minutos %= 60;
     horas %= 24;
+    inf(tempofinal > 0 ){
+        
    
- return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos";
+ return [dias,horas,minutos,segundos];
     
 } else {
-    return "Prazo Finalizado";
+    return [0,0,0,0];
     }
 }
 
