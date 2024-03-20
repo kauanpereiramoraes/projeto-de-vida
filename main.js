@@ -46,7 +46,11 @@ function calculaTempo(tempoObjetivo) {
 }
 
 funtion atualiarCronometro(){
-for (let i=0; i <contadores.lenght;i==){
+document.getElementById("dias0").textContent =calculaTempo(tempos[0])[0];
+    document.getElementById("horas0").textContent =calculaTempo(tempos[0])[0];
+    document.getElementById("min0").textContent =calculaTempo(tempos[0])[0];
+    document.getElementById("seg0").textContent =calculaTempo(tempos[0])[0];
+    for (let i=0; i <contadores.lenght;i==){
     cotadores[i].textContent= calculaTempo(tempo[i]);
 }
 }
@@ -54,4 +58,4 @@ funtion comecaCronometro(){
     atualizaCronometro();
     setInterval(atualiaCronometro,1000);
 }
-// comecaCronometro();
+ comecaCronometro();
