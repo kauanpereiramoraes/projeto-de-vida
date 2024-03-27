@@ -52,9 +52,14 @@ document.getElementById("dias"+i).textContent =calculaTempo(tempos[i])[0];
     document.getElementById("seg"+i).textContent =calculaTempo(tempos[i])[3];
     
     for (let i=0; i <contadores.lenght;i++){
-    // cotadores[i].textContent= calculaTempo(tempo[i]);
+    // cotadores[i].textContent = calculaTempo(tempo[i]);
 }
+
+    function comecaCronometro(){
+        atualizarCronometro();
+        setInterval(atualiaCronometro,1000);
 }
+        
 funtion comecaCronometro(){
     atualizaCronometro();
     setInterval(atualiaCronometro,1000);
